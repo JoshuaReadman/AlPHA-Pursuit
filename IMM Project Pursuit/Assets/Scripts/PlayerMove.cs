@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-	public float movementSpeed = 10f;
+	public float movementSpeed = 20f;
 	public Spawnmanager spawnManager;
 	
     // Start is called before the first frame update

@@ -5,11 +5,11 @@ using UnityEngine;
 public class Spawnmanager : MonoBehaviour
 {
 
-	RoadSpawner roadSpawner;
+	RoadSpawner RoadSpawner;
     // Start is called before the first frame update
     void Start()
     {
-        roadSpawner = GetComponent<RoadSpawner>();
+        RoadSpawner = GetComponent<RoadSpawner>();
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class Spawnmanager : MonoBehaviour
 
     public void SpawnTriggerEntered()
     {
-    	roadSpawner.MoveRoad();
+    	RoadSpawner.MoveRoad();
     }
 
 }

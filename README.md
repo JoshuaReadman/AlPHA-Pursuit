@@ -2,7 +2,7 @@
 A car chase game where the goal is to survive as long as possible.
 
 //CURRENT BUILD
-currently only the player model and camera are the only objects added.
+currently only the player model and camera are the objects added.
 road will loop forever by deleting the roads behind the player and adding them to the front.
 
 //TO-BE ADDED

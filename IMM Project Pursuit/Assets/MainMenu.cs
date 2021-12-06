@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawnmanager : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-
-	RoadSpawner RoadSpawner;
     // Start is called before the first frame update
     void Start()
     {
-        RoadSpawner = GetComponent<RoadSpawner>();
         
     }
 
@@ -18,12 +15,4 @@ public class Spawnmanager : MonoBehaviour
     {
         
     }
-
-    public void SpawnTriggerEntered()
-    {
-    	RoadSpawner.MoveRoad();
-    }
-
-    
-
 }

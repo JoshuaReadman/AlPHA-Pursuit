@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
+
 	public float movementSpeed = 20f;
 	public Spawnmanager spawnManager;
 	
@@ -17,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     		float hMovement = Input.GetAxis("Horizontal")*movementSpeed;
 
 

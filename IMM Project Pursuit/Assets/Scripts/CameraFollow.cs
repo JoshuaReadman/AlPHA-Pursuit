@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
 	public float movementSpeed = 10f;
+    
     // Start is called before the first frame update
     void Start()
     {

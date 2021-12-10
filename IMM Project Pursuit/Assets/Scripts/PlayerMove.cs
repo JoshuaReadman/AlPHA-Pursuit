@@ -6,11 +6,15 @@ public class PlayerMove : MonoBehaviour
 {
 
 
-	public float movementSpeed = 5f;
+	public float movementSpeed = 10f;
 	public Spawnmanager spawnManager;
     public bool Moving = true;
     public float maxSpeed = 1000f;
     public Transform position;
+    public float turnSpeedx = 0f;
+    public float turnSpeedy = 10f;
+    public float turnSpeedz = 0f;
+    
 	
     // Start is called before the first frame update
     void Start()
@@ -23,15 +27,18 @@ public class PlayerMove : MonoBehaviour
     {
         
     		float hMovement = Input.GetAxis("Horizontal")*movementSpeed;
+            float rMovement = Input.GetAxis("Horizontal")*5;
+
+            transform.Rotate(new Vector3(0,rMovement,0)/1);
+//dick
 
 
 
-
-    		transform.Translate(Vector3.forward*Time.deltaTime*(movementSpeed/2));
-    		transform.Translate(new Vector3(hMovement,0)*Time.deltaTime	);
+    		transform.Translate(Vector3.left*Time.deltaTime*(movementSpeed/2));
+    		
             if(Moving == true)
             {
-                movementSpeed += 0.00005f;
+                movementSpeed += 0.00018f;
             }
             if(movementSpeed>=maxSpeed){
                 movementSpeed = maxSpeed;
